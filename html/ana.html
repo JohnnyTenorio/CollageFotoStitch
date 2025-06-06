@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test de Reconocimiento - Ana Belén</title>
+    <link rel="stylesheet" href="../css/ana.css" />
+    <link rel="shortcut icon" href="../img/Stitch.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <h1>Bienvenida Ana Belén</h1>
+    <p class="intro">
+        Esperemos seas tú. Para verificar vamos a hacer un test de reconocimiento. Responde estas 5 preguntas para
+        verificar que eres tú:
+    </p>
+
+    <form id="testForm">
+
+        <div class="pregunta">
+            <p>1. ¿Cuándo nos conocimos? (La pregunta se basa en cuándo nos hicimos amigos)</p>
+            <label><input type="radio" name="q1" value="1"> 1 ciclo</label>
+            <label><input type="radio" name="q1" value="2"> 2 ciclo</label>
+            <label><input type="radio" name="q1" value="3"> 3 ciclo</label>
+            <label><input type="radio" name="q1" value="4"> 4 ciclo</label>
+            <label><input type="radio" name="q1" value="5"> 5 ciclo</label>
+            <label><input type="radio" name="q1" value="6"> 6 ciclo si que pasamos xD</label>
+        </div>
+
+        <div class="pregunta">
+            <p>2. ¿Cuál es tu color favorito?</p>
+            <label><input type="radio" name="q2" value="verde"> Verde</label>
+            <label><input type="radio" name="q2" value="rojo"> Rojo</label>
+            <label><input type="radio" name="q2" value="azul"> Azul</label>
+        </div>
+
+        <div class="pregunta">
+            <p>3. ¿Cuál es tu dibujo favorito actual?</p>
+            <label><input type="radio" name="q3" value="stitch"> Stitch</label>
+            <label><input type="radio" name="q3" value="mickey"> Mickey Mouse</label>
+        </div>
+
+        <div class="pregunta">
+            <p>4. ¿Cuántos años tienes? (Ojo no pareces, pareces tener unos 10 años por pequeña y hermosa y por
+                berrichuda xD)</p>
+            <label><input type="radio" name="q4" value="19"> 19</label>
+            <label><input type="radio" name="q4" value="20"> 20</label>
+            <label><input type="radio" name="q4" value="30"> 30</label>
+        </div>
+
+        <div class="pregunta">
+            <p>5. ¿Cómo me llaman las personas que solo le permito porque las quiero?</p>
+            <label><input type="radio" name="q5" value="Leonel"> Leonel</label>
+            <label><input type="radio" name="q5" value="Leo"> Leo</label>
+            <label><input type="radio" name="q5" value="Johnny"> Johnny</label>
+            <label><input type="radio" name="q5" value="Tenorio"> Tenorio</label>
+        </div>
+
+        <div class="pregunta">
+            <p>Adicional: ¿Sabes que esto es para conquistarte, pero claro para algunos años xd? (Por el momento normal
+                no me ignores xD, aquí no importa la respuesta, pero si dado caso pon "sí" igual es válido, así como
+                "no")</p>
+            <label><input type="radio" name="q6" value="si"> Sí</label>
+            <label><input type="radio" name="q6" value="no"> No</label>
+        </div>
+
+        <button type="submit">Enviar respuestas</button>
+    </form>
+
+    <div id="resultado"></div>
+    <p id="contador"
+        style="display:none; text-align:center; font-size: 1.2rem; color: green; margin-top: 20px;">
+    </p>
+
+    <script src="../js/ana.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</body>
+
+</html>

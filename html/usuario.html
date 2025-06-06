@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="../css/usuario.css">
+    <link rel="shortcut icon" href="../img/Stitch.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h1>Generador de Collage</h1>
+        <center>
+            <p>Sube tus fotos y personaliza tu fondo</p>
+        </center>
+
+        <div class="grid-fotos">
+            <div class="foto-item">
+                <label>Fondo</label>
+                <label class="custom-file-upload">
+                    <input type="file" accept="image/*" id="fondoInput">
+                    Seleccionar archivo
+                </label>
+                <span class="estado-archivo">Ningún archivo seleccionado</span>
+            </div>
+
+            <div class="foto-item">
+                <label>Foto 1</label>
+                <label class="custom-file-upload">
+                    <input type="file" accept="image/*" class="fotoInput">
+                    Seleccionar archivo
+                </label>
+                <span class="estado-archivo">Ningún archivo seleccionado</span>
+
+            </div>
+
+            <div class="foto-item">
+                <label>Foto 2</label>
+                <label class="custom-file-upload">
+                    <input type="file" accept="image/*" class="fotoInput">
+                    Seleccionar archivo
+                </label>
+                <span class="estado-archivo">Ningún archivo seleccionado</span>
+
+            </div>
+
+            <div class="foto-item">
+                <label>Foto 3</label>
+                <label class="custom-file-upload">
+                    <input type="file" accept="image/*" class="fotoInput">
+                    Seleccionar archivo
+                </label>
+                <span class="estado-archivo">Ningún archivo seleccionado</span>
+
+            </div>
+
+            <div class="foto-item">
+                <label>Foto 4</label>
+                <label class="custom-file-upload">
+                    <input type="file" accept="image/*" class="fotoInput">
+                    Seleccionar archivo
+                </label>
+                <span class="estado-archivo">Ningún archivo seleccionado</span>
+            </div>
+        </div>
+
+        <center><button id="generarBtn">Generar Foto</button></center>
+        <center><button id="salirBtn">Salir</button></center>
+        
+        <div id="preview" class="preview">
+            <h2>Vista previa del collage</h2>
+            <canvas id="collageCanvas" width="600" height="700"></canvas><br>
+            <button id="descargarBtn">Descargar</button>
+        </div>
+    </div>
+    <!-- Modal para elegir tipo de descarga -->
+    <div id="modalDescarga" style="display:none; position: fixed; top:0; left:0; width:100%; height:100%; 
+  background: rgba(0,0,0,0.5); justify-content:center; align-items:center; z-index: 1000;">
+        <div style="background:#fff; padding: 20px 30px; border-radius: 12px; text-align:center; min-width: 300px;">
+            <h3>Elige el formato de descarga</h3>
+            <button id="btnDescargarImagen"
+                style="margin: 10px; padding:10px 20px; background:#04ee46; color:#fff; border:none; border-radius:8px; cursor:pointer;">Descargar
+                Imagen</button>
+            <button id="btnDescargarPDF"
+                style="margin: 10px; padding:10px 20px; background:#2e7d32; color:#fff; border:none; border-radius:8px; cursor:pointer;">Descargar
+                PDF</button>
+            <br>
+            <button id="btnCerrarModal"
+                style="margin-top: 20px; background:#ccc; padding:5px 10px; border:none; border-radius:6px; cursor:pointer;">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="../js/usuario.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+
+</html>
